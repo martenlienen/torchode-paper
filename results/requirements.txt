@@ -1,0 +1,17 @@
+joblib
+scipy
+pandas
+
+torch==1.12.1
+
+torchode
+torchdyn==1.0.3
+torchdiffeq==0.2.3
+
+jax==0.3.16
+diffrax==0.2.1
+
+jupyterlab
+
+matplotlib
+proplot

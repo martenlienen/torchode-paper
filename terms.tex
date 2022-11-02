@@ -1,0 +1,46 @@
+\newcommand\package[1]{\texttt{#1}}
+\def\torchode{\package{torchode}}
+\def\torchdiffeq{\package{torchdiffeq}}
+\def\diffrax{\package{diffrax}}
+\def\torchdyn{\package{TorchDyn}}
+\def\diffeq{\package{DifferentialEquations.jl}}
+\def\diffeqflux{\package{DiffEqFlux.jl}}
+
+\def\python{Python}
+\def\julia{Julia}
+\def\pytorch{PyTorch}
+\def\jax{JAX}
+\def\flux{Flux}
+
+\usepackage{pifont}% http://ctan.org/pkg/pifont
+\newcommand{\cmark}{\ding{51}}%
+\newcommand{\xmark}{\ding{55}}%
+\def\yes{\cmark}
+\def\no{\xmark}
+
+% Define shorthands to use abbreviations
+\newcommand{\defabbrcmd}[1]{
+\expandafter\def\csname#1\endcsname{{\ab{#1}}}
+}
+\newcommand{\defabbrcmds}[1]{
+\expandafter\def\csname#1\endcsname{{\ab{#1}}}
+\expandafter\def\csname#1s\endcsname{{\abp{#1}}}
+}
+
+\newabbreviation{ODE}{ODE}{ordinary differential equation}
+\defabbrcmds{ODE}
+
+\newabbreviation{ml}{ML}{machine learning}
+\defabbrcmds{ml}
+
+\newabbreviation{cnf}{CNF}{continous normalizing flow}
+\defabbrcmds{cnf}
+
+\newabbreviation{fen}{FEN}{finite element networks}
+\defabbrcmd{fen}
+
+\newabbreviation{vdp}{VdP}{Van der Pol}
+\defabbrcmd{vdp}
+
+\newabbreviation{jit}{JIT}{just-in-time}
+\defabbrcmd{jit}

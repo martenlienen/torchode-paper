@@ -1,0 +1,42 @@
+[build-system]
+requires = ["flit_core ~= 3.7"]
+build-backend = "flit_core.buildapi"
+
+[project]
+name = "torchode-utils"
+dynamic = ["version", "description"]
+readme = "README.md"
+requires-python = ">= 3.10"
+license = {file = "LICENSE"}
+authors = []
+classifiers = [
+  "Development Status :: 3 - Alpha",
+  "Intended Audience :: Developers",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Operating System :: OS Independent",
+  "Programming Language :: Python"
+]
+dependencies = []
+
+[project.optional-dependencies]
+test = ["pytest"]
+benchmark = ["pytest-benchmark"]
+
+[project.urls]
+homepage = ""
+
+[tool.flit.module]
+name = "torchode_utils"
+
+[tool.flit.sdist]
+exclude = ["tests/"]
+
+[tool.black]
+target-version = ["py310"]
+
+[tool.isort]
+known_first_party = ["torchode_utils"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]

@@ -1,0 +1,24 @@
+__pycache__
+/results/cache
+
+# overleaf-sync
+.olauth
+
+# LaTex
+*.aux
+*.out
+*.pdf
+*.bbl
+*.blg
+*.brf
+_minted-main
+
+# AucTEX
+/_region_.*
+/auto
+/*.log
+/*.synctex.gz
+
+# arxiv upload
+arxiv
+arxiv.tar.gz
